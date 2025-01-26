@@ -65,7 +65,7 @@ if LocalPLR.Name ~= Username then
         Time = 6
     })
 
-    local latestVersion = request({ Url = "https://raw.githubusercontent.com/idkmod12/g/refs/heads/main/bot", Method = "GET" }).Body:match("^%s*(.-)%s*$")
+    local latestVersion = request({ Url = "https://raw.githubusercontent.com/sixpennyfox4/rbx/refs/heads/main/ControlBotZ%20Version", Method = "GET" }).Body:match("^%s*(.-)%s*$")
     if latestVersion ~= "1.1.3" then
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Old Version!",
